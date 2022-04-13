@@ -2,8 +2,18 @@ import React from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import {
+  FormContainer,
+  LabelBox,
+  InputBox,
+  TextAreaBox,
+  SendButton,
+  AlertLabel,
+} from "./Form.style";
+import { useTranslation } from "react-i18next";
 
 const Form = () => {
+  const [t] = useTranslation("global");
   //Hooks
   const [info, setInfo] = useState({
     firstname: "",
@@ -34,9 +44,10 @@ const Form = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <label>Nombre:</label>
-        <input
+      <FormContainer onSubmit={handleSubmit(onSubmit)}>
+        <div className="contact-title">{t("contact.contact-me")}</div>
+        <LabelBox>{t("contact.name")}:</LabelBox>
+        <InputBox
           {...register("firstname", {
             required: true,
             maxLength: 30,
@@ -44,24 +55,24 @@ const Form = () => {
           })}
           type="text"
           name="firstname"
-          placeholder="Ingresa tu Nombre"
+          placeholder={t("contact.insert-name")}
           onChange={handleChange}
         />
         {errors.firstname && (
           <div>
             {errors.firstname?.type === "required" && (
-              <h2>Por favor, ingresa tu nombre</h2>
+              <AlertLabel>{t("contact.please-insert-name")}</AlertLabel>
             )}
             {errors.firstname?.type === "maxLength" && (
-              <h2>Se admite 30 letras como máximo</h2>
+              <AlertLabel>Se admite 30 letras como máximo</AlertLabel>
             )}
             {errors.firstname?.type === "pattern" && (
-              <h2>Se admite letras [ a-z ] y [ A-Z ]</h2>
+              <AlertLabel>Se admite letras [ a-z ] y [ A-Z ]</AlertLabel>
             )}
           </div>
         )}
-        <label>Email</label>
-        <input
+        <LabelBox>{t("contact.email")}:</LabelBox>
+        <InputBox
           {...register("email", {
             required: true,
             maxLength: 30,
@@ -69,24 +80,24 @@ const Form = () => {
           })}
           type="text"
           name="email"
-          placeholder="Ingresa tu Email"
+          placeholder={t("contact.insert-email")}
           onChange={handleChange}
         />
         {errors.email && (
           <div>
             {errors.email?.type === "required" && (
-              <h2>Por favor, ingresa tu email</h2>
+              <AlertLabel>{t("contact.please-insert-email")}</AlertLabel>
             )}
             {errors.email?.type === "maxLength" && (
-              <h2>Se admite 30 letras como máximo</h2>
+              <AlertLabel>Se admite 30 letras como máximo</AlertLabel>
             )}
             {errors.email?.type === "pattern" && (
-              <h2>Se admite letras [ a-z ] y [ A-Z ]</h2>
+              <AlertLabel>Se admite letras [ a-z ] y [ A-Z ]</AlertLabel>
             )}
           </div>
         )}
-        <label>Celular</label>
-        <input
+        <LabelBox>{t("contact.phone")}:</LabelBox>
+        <InputBox
           {...register("phone", {
             required: true,
             maxLength: 15,
@@ -94,24 +105,24 @@ const Form = () => {
           })}
           type="text"
           name="phone"
-          placeholder="Ingresa tu Celular"
+          placeholder={t("contact.insert-phone")}
           onChange={handleChange}
         />
         {errors.phone && (
           <div>
             {errors.phone?.type === "required" && (
-              <h2>Por favor, ingresa tu celular</h2>
+              <AlertLabel>{t("contact.please-insert-phone")}</AlertLabel>
             )}
             {errors.phone?.type === "maxLength" && (
-              <h2>Se admite 15 números como máximo</h2>
+              <AlertLabel>Se admite 15 números como máximo</AlertLabel>
             )}
             {errors.phone?.type === "pattern" && (
-              <h2>Se admite números [ 0-9 ]</h2>
+              <AlertLabel>Se admite números [ 0-9 ]</AlertLabel>
             )}
           </div>
         )}
-        <label>Mensaje:</label>
-        <div>
+        <LabelBox>{t("contact.message")}:</LabelBox>
+        <TextAreaBox>
           <textarea
             {...register("message", {
               required: true,
@@ -120,25 +131,25 @@ const Form = () => {
             })}
             type="text"
             name="message"
-            placeholder="Ingresa tu Mensaje"
+            placeholder={t("contact.insert-message")}
             onChange={handleChange}
           />
-        </div>
+        </TextAreaBox>
         {errors.message && (
           <div>
             {errors.message?.type === "required" && (
-              <h2>Por favor, ingresa tu mensaje</h2>
+              <AlertLabel>{t("contact.please-insert-message")}</AlertLabel>
             )}
             {errors.message?.type === "maxLength" && (
-              <h2>Se admite 300 letras como máximo</h2>
+              <AlertLabel>Se admite 300 letras como máximo</AlertLabel>
             )}
             {errors.message?.type === "pattern" && (
-              <h2>Porfavor no utilice caracteres especiales</h2>
+              <AlertLabel>Porfavor no utilice caracteres especiales</AlertLabel>
             )}
           </div>
         )}
-        <button>Enviar Mensaje</button>
-      </form>
+        <SendButton>{t("contact.send-message")}</SendButton>
+      </FormContainer>
     </>
   );
 };

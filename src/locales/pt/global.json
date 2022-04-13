@@ -1,0 +1,36 @@
+{
+	"info": {
+		"hi-i'm": "Oi, sou",
+		"web-developer": "Desenvolvedor Web"
+	  },
+	"contact": {
+		"contact-me": "Contact me",
+		"name": "Name",
+		"insert-name": "Insert your name",
+		"please-insert-name": "Please, insert your name",
+		"error-maxlength-name": "",
+		"error-pattern-name": "",
+		"email": "Email",
+		"insert-email": "Insert your email",
+		"please-insert-email": "Please, insert your email",
+		"error-maxlength-email": "",
+		"error-pattern-email": "",
+		"phone": "Phone",
+		"insert-phone": "Insert your phone",
+		"please-insert-phone": "Please, insert your phone",
+		"error-maxlength-phone": "",
+		"error-pattern-phone": "",
+		"message": "Message",
+		"insert-message": "Insert your message",
+		"please-insert-message": "Please, insert your message",
+		"error-maxlength-message": "",
+		"error-pattern-message": "",
+		"send-message": "Send Message!"
+	},
+	"skills": {
+		"title": "Skills"
+	},
+	"footer": {
+		"copyright": "©2022 Todos os direitos reservados."
+	}
+}

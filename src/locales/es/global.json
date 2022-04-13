@@ -1,0 +1,36 @@
+{
+  "info": {
+    "hi-i'm": "Hola, soy",
+	"web-developer": "Desarrollador Web"
+  },
+  "contact": {
+    "contact-me": "Contáctame",
+    "name": "Nombre",
+    "insert-name": "Ingresa tu nombre",
+    "please-insert-name": "Porfavor, ingresa tu nombre",
+    "error-maxlength-name": "Se admite 30 letras como máximo",
+    "error-pattern-name": "Se admite letras [ a-z ] y [ A-Z ]",
+    "email": "Correo",
+    "insert-email": "Ingresa tu correo",
+    "please-insert-email": "Porfavor, ingresa tu correo",
+    "error-maxlength-email": "Se admite 30 letras como máximo",
+    "error-pattern-email": "Se admite letras [ a-z ] y [ A-Z ]",
+    "phone": "Celular",
+    "insert-phone": "Ingresa tu celular",
+    "please-insert-phone": "Porfavor, ingresa tu celular",
+    "error-maxlength-phone": "Se admite 15 números como máximo",
+    "error-pattern-phone": "Se admite números [ 0-9 ] y [+ ()]",
+    "message": "Mensaje",
+    "insert-message": "Ingresa tu mensaje",
+    "please-insert-message": "Porfavor, ingresa tu mensaje",
+    "error-maxlength-message": "Se admite 300 letras como máximo",
+    "error-pattern-message": "Porfavor no utilice caracteres especiales",
+    "send-message": "Enviar Mensaje!"
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "footer": {
+    "copyright": "©2022 Todos los Derechos Reservados."
+  }
+}

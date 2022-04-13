@@ -1,0 +1,36 @@
+{
+	"info": {
+		"hi-i'm": "Hi, i'm",
+		"web-developer": "Web Developer"
+	  },
+	"contact": {
+		"contact-me": "Contact me",
+		"name": "Name",
+		"insert-name": "Insert your name",
+		"please-insert-name": "Please, insert your name",
+		"error-maxlength-name": "The maximum length allowed is 30 letters",
+		"error-pattern-name": "Sorry, only letters [a z] and [A Z]",
+		"email": "Email",
+		"insert-email": "Insert your email",
+		"please-insert-email": "Please, insert your email",
+		"error-maxlength-email": "The maximum length allowed is 30 letters",
+		"error-pattern-email": "Sorry, only letters [a z] and [A Z]",
+		"phone": "Phone",
+		"insert-phone": "Insert your phone",
+		"please-insert-phone": "Please, insert your phone",
+		"error-maxlength-phone": "The maximum length allowed is 15 numbers",
+		"error-pattern-phone": "Sorry, only numbers [0 9] and [+ ()]",
+		"message": "Message",
+		"insert-message": "Insert your message",
+		"please-insert-message": "Please, insert your message",
+		"error-maxlength-message": "The maximum length allowed is 300 letters",
+		"error-pattern-message": "Please, don't use special characters",
+		"send-message": "Send Message!"
+	},
+	"skills": {
+		"title": "Skills"
+	},
+	"footer": {
+		"copyright": "©2022 All Rights Reserved."
+	}
+}
