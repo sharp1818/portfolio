@@ -27,6 +27,10 @@
 		"error-pattern-message": "Please, don't use special characters",
 		"send-message": "Send Message!"
 	},
+	"portfolio": {
+		"Portfolio": "Portfolio",
+		"This is a list of some public projects that I've participated": "This is a list of some public projects that I've participated"
+	},
 	"skills": {
 		"title": "Skills"
 	},
